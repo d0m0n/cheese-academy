@@ -1,0 +1,437 @@
+/* ここから下に記載していく */
+
+html {
+	background-color: #cacaca;
+}
+
+body {
+	min-height: 100vh;
+	max-width: 1200px;
+	background-color: white;
+	margin: 0 auto;
+}
+
+.navigation {
+	display: flex;
+	align-items: center;
+	font-size: 21px
+}
+
+.title {
+	text-align: center;
+	position: relative;
+}
+
+.title img {
+	max-width: 100%;
+	/*画像が親要素からはみ出すのを防ぐ*/
+	height: auto;
+}
+
+.title h1 {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 44px;
+	color: white;
+	padding: 0;
+	margin: 0;
+}
+
+.title h2 {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 24px;
+	color: white;
+	padding: 0;
+	margin: 0;
+}
+
+.about {
+	text-align: center;
+}
+
+.about-title {
+	margin-top: 60px;
+	margin-bottom: 30px;
+	font-size: 24px;
+	color: #FFD61A;
+}
+
+.about p {
+	font-size: 16px
+}
+
+.about img {
+	max-width: 100%;
+	height: auto;
+}
+
+.course {
+	text-align: center;
+}
+
+.course-title {
+	margin-top: 60px;
+	margin-bottom: 30px;
+	font-size: 24px;
+	color: #222222;
+}
+
+.course01 {
+	display: flex;
+	align-items: center;
+	background-color: #fafafa;
+}
+
+.course-text {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.pos-center {
+	display: flex;
+	justify-content: center;
+}
+
+.news {
+	display: flex;
+	margin-left: 32px;
+	margin-right: 32px;
+	gap: 0 30px;
+}
+
+.news h6 {
+	margin-top: 30px;
+	margin-bottom: 24px;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.news p {
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.news-button {
+	max-width: 300px;
+}
+
+.news-button:hover {
+	transform: scale(1.1);
+	box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+}
+
+button {
+	width: 300px;
+	height: 60px;
+	background-color: #FFD61A;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	vertical-align: middle;
+	border: none;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+button:hover {
+	transform: scale(1.1);
+	box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+}
+
+.access-bg {
+	background-color: #fafafa;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.access-title {
+	margin-bottom: 30px;
+	font-size: 24px;
+	color: #222222;
+}
+
+.table-pos {
+	display: flex;
+	justify-content: center;
+	margin-top: 60px;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
+table {
+	width: 70%;
+}
+
+th,
+td {
+	padding: 15px;
+	font-weight: normal;
+}
+
+@media only screen and (max-width: 500px) {
+
+	.mobile-blocky tr,
+	.mobile-blocky th,
+	.mobile-blocky td {
+		display: block;
+		/* セルを縦に */
+		border: none;
+		padding-top: 8px;
+		padding-bottom: 0px;
+	}
+
+	.form-table {
+		border-top: none;
+	}
+
+}
+
+.nowrap {
+	white-space: nowrap;
+	/* 勝手に折り返さない */
+}
+
+/* フォーム */
+.form-table {
+	border-spacing: 0;
+}
+
+.form-table th {
+	width: 240px;
+	padding-left: 16px;
+	padding-right: 64px;
+	font-weight: normal;
+	text-align: left;
+	border-bottom: 1px solid #bfbfbf;
+	border-top: 1px solid #bfbfbf;
+	border-right: 1px solid #bfbfbf;
+}
+
+.form-table td {
+	width: 400px;
+	padding: 8px;
+	font-weight: normal;
+	text-align: left;
+	border-bottom: 1px solid #bfbfbf;
+	border-top: 1px solid #bfbfbf;
+}
+
+/* 文字入力フォーム */
+.c-form-text {
+	height: 2.4em;
+	width: 90%;
+	padding: 0 16px;
+	border: none;
+	box-shadow: 0 0 0 1px #bfbfbf;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.c-form-text:focus {
+	outline: 0;
+	box-shadow: 0 0 0 2px #FFD61A;
+}
+
+/* ドロップダウンメニュー */
+.c-form-select {
+	position: relative;
+	width: 97%;
+}
+
+.c-form-select:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	right: 12px;
+	width: 8px;
+	height: 8px;
+	border-top: 2px solid #707070;
+	border-right: 2px solid #707070;
+	transform: rotate(135deg);
+	pointer-events: none;
+}
+
+.c-form-select select {
+	height: 2.4em;
+	width: 100%;
+	padding: 0 8px;
+	border: none;
+	box-shadow: 0 0 0 1px #bfbfbf;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	cursor: pointer;
+}
+
+.c-form-select select::-ms-expand {
+	display: none;
+}
+
+.c-form-select select:focus {
+	outline: 0;
+	box-shadow: 0 0 0 2px #FFD61A;
+}
+
+/* チェックボックス */
+
+.c-form-checkbox {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	row-gap: 24px;
+}
+
+.c-form-checkbox input {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+}
+
+.c-form-checkbox-name {
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	color: #707070;
+	position: relative;
+}
+
+.c-form-checkbox-name:before {
+	content: "";
+	display: inline-block;
+	width: 1.2em;
+	height: 1.2em;
+	border: 1px solid #707070;
+	background-color: #f0f0f0;
+	margin-right: 6px;
+	flex-shrink: 0;
+}
+
+.c-form-checkbox input:checked+.c-form-checkbox-name {
+	color: #707070;
+	;
+}
+
+.c-form-checkbox input:checked+.c-form-checkbox-name:before {
+	border: 1px solid #FFD61A;
+	background-color: #FFD61A;
+}
+
+.c-form-checkbox input:checked+.c-form-checkbox-name:after {
+	content: "";
+	position: absolute;
+	border: solid #fff;
+	border-width: 0 2px 2px 0;
+	left: 0.4em;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 0.4em;
+	height: 0.65em;
+	transform: translateY(-1px) rotate(45deg);
+}
+
+.c-form-checkbox input:focus-visible+.c-form-checkbox-name .c-form-checkbox-text {
+	background: linear-gradient(transparent 90%, #FFD61A 90%);
+}
+
+/* テキストエリア */
+.c-form-textarea {
+	display: block;
+	width: 90%;
+	height: 10em;
+	padding: 4px 16px;
+	border: none;
+	box-shadow: 0 0 0 1px #707070;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	resize: vertical;
+}
+
+.c-form-textarea:focus {
+	outline: 0;
+	box-shadow: 0 0 0 2px #FFD61A;
+}
+
+@media only screen and (max-width: 500px) {
+
+	.form-tabley tr,
+	.form-table th,
+	.form-table td {
+		display: block;
+		/* セルを縦に */
+		border: none;
+		padding-top: 8px;
+		padding-bottom: 0px;
+	}
+
+	.form-table {
+		border-top: none;
+	}
+
+}
+
+
+
+
+header {
+	padding: 0 2%;
+}
+
+/* ナビゲーション */
+nav {
+	text-align: center;
+
+}
+
+nav ul {
+	margin-right: 50px;
+	margin-left: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	width: 18%;
+	min-width: 90px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #222222;
+}
+
+nav ul li.current a {
+	color: #F33135;
+}
+
+nav ul li a:hover {
+	color: #FFD61A;
+}
+
+/* フッター */
+
+footer {
+	background-color: #707070;
+	color: white;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
