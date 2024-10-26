@@ -8,7 +8,7 @@
 
 ## ③DEMO
 
-デプロイしている場合はURLを記入（任意）
+https://d0m0n.github.io/cheese-academy/
 
 ## ④作ったアプリケーション用のIDまたはPasswordがある場合
 
